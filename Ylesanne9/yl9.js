@@ -23,7 +23,7 @@ function kuupaev(kuupaev) {
 }
 
 // Funktsioon, mis leiab sisendina antud täisarvude koguarvu ja keskmise
-function keskmine(...arvud) {
+function keskmine1(...arvud) {
     const koguarv = arvud.length;
     const summa = arvud.reduce((acc, arv) => acc + arv, 0);
     const keskmine = koguarv ? summa / koguarv : 0;
@@ -42,6 +42,6 @@ const unikaalsednimed = (nimed) => {
 console.log(minunimi());
 console.log(minuniminoolefunktsioon());
 kuupaev("19.07.23");
-console.log(keskmine(1, 2, 3, 4, 5));
+console.log(keskmine1(1, 2, 3, 4, 5));
 console.log(salasonum("Tere tulemast!"));
 console.log(unikaalsednimed(["Kati", "Mati", "Kati", "Mari", "Mati", "Jüri"]));
